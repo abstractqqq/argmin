@@ -38,7 +38,7 @@ faer_0_20 = { package = "faer", version = "0.20", optional = true}
 faer_0_21 = { package = "faer", version = "0.21", optional = true}
 faer_0_22 = { package = "faer", version = "0.22", optional = true}
 faer_0_23 = { package = "faer", version = "0.23", optional = true}
-faer_0_24 = { package = "faer", version = "0.24", optional = true, default-features = false, features = ["nightly", "rayon", "sparse-linalg"]}
+faer_0_24 = { package = "faer", git = "https://codeberg.org/sarah-quinones/faer", rev = "8377404e78", optional = true, default-features = false, features = ["nightly", "rayon", "sparse-linalg"]}
 faer_traits_0_21 = {package = "faer-traits", version = "0.21", optional = true}
 faer_traits_0_22 = {package = "faer-traits", version = "0.22", optional = true}
 faer_traits_0_23 = {package = "faer-traits", version = "0.23", optional = true}
