@@ -38,11 +38,13 @@ faer_0_20 = { package = "faer", version = "0.20", optional = true}
 faer_0_21 = { package = "faer", version = "0.21", optional = true}
 faer_0_22 = { package = "faer", version = "0.22", optional = true}
 faer_0_23 = { package = "faer", version = "0.23", optional = true}
-faer_0_24 = { package = "faer", git = "https://codeberg.org/sarah-quinones/faer", rev = "8377404e78", optional = true, default-features = false, features = ["nightly", "rayon", "sparse-linalg"]}
+faer_0_24 = { package = "faer", version = "0.24", optional = true}
+faer_0_custom = { package = "faer", git = "https://codeberg.org/sarah-quinones/faer", rev = "8377404e78", optional = true, default-features = false, features = ["nightly", "rayon", "sparse-linalg"]}
 faer_traits_0_21 = {package = "faer-traits", version = "0.21", optional = true}
 faer_traits_0_22 = {package = "faer-traits", version = "0.22", optional = true}
 faer_traits_0_23 = {package = "faer-traits", version = "0.23", optional = true}
-faer_traits_0_24 = {package = "faer-traits", git = "https://codeberg.org/sarah-quinones/faer", rev = "8377404e78", optional = true}
+faer_traits_0_24 = {package = "faer-traits", version = "0.24", optional = true}
+faer_traits_0_custom = {package = "faer-traits", git = "https://codeberg.org/sarah-quinones/faer", rev = "8377404e78", optional = true}
 
 # general
 num-complex_0_4 = { package = "num-complex", version = "0.4", optional = true, default-features = false, features = ["std"] }
@@ -92,6 +94,7 @@ faer_v0_21  = ["faer_0_21", "num-complex_0_4", "faer_traits_0_21", "faer_all"]
 faer_v0_22  = ["faer_0_22", "num-complex_0_4", "faer_traits_0_22", "faer_all"]
 faer_v0_23  = ["faer_0_23", "num-complex_0_4", "faer_traits_0_23", "faer_all"]
 faer_v0_24  = ["faer_0_24", "num-complex_0_4", "faer_traits_0_24", "faer_all"]
+faer_v0_custom  = ["faer_0_custom", "num-complex_0_4", "faer_traits_0_custom", "faer_all"]
 
 ## With `ndarray-linalg`
 ndarray_v0_16 = ["ndarray_0_16", "ndarray-linalg_0_17", "num-complex_0_4", "ndarray_all"]
