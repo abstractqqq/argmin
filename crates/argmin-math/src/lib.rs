@@ -272,6 +272,8 @@ cfg_if::cfg_if! {
         extern crate faer_0_23 as faer;
     } else if #[cfg(feature = "faer_v0_24")] {
         extern crate faer_0_24 as faer;
+    } else if #[cfg(feature = "faer_v0_custom")] {
+        extern crate faer_0_custom as faer;
     }
 }
 
@@ -321,6 +323,10 @@ cfg_if! {
         extern crate faer_traits_0_24 as faer_traits;
         mod faer_m_0_24;
         use faer_m_0_24 as faer_m;
+    } else if #[cfg(feature = "faer_v0_custom")] {
+        extern crate faer_traits_0_custom as faer_traits;
+        mod faer_m_0_custom;
+        use faer_m_0_custom as faer_m;
     } 
 }
 
